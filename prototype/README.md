@@ -13,7 +13,10 @@ The prototype is currently very simple.  It stores mutation data to MongoDB and 
 * http://www.mongodb.com/:  you must download, and install mongoDB.  Once installed, run as daemon:  
 
 		mongod
-		
+
+## Proxy server
+If you working with a proxy server then you need to set your proxy settings for maven.Help <a href="https://maven.apache.org/guides/mini/guide-proxies.html">link</a>.
+
 ## Running Unit Tests
 
 Run:
@@ -30,6 +33,16 @@ The data folder contains a trivial set of data files:
 To load this data, run:
 
 	./init.sh
+
+## Addition to pom.xml 
+Add java version to your pom.xml:
+	<properties>
+		.
+		<maven.compiler.source>1.7</maven.compiler.source>
+		<maven.compiler.target>1.7</maven.compiler.target>
+		.
+	</properties>
+
 
 ## Accessing the Web Services
 
