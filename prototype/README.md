@@ -36,12 +36,14 @@ To load this data, run:
 
 ## Addition to pom.xml 
 Add java version to your pom.xml:
+```
 	<properties>
 		.
 		<maven.compiler.source>1.7</maven.compiler.source>
 		<maven.compiler.target>1.7</maven.compiler.target>
 		.
 	</properties>
+```
 
 
 ## Accessing the Web Services
